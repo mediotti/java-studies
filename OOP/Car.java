@@ -1,14 +1,16 @@
-public class Car {
-    int modelYear;
-    String modelName;
-  
-    public Car(int year, String name) {
-      modelYear = year;                     //This will be a constructor, it'll initialize the object in memory when you create a new object.
-      modelName = name;
+class Vehicle {
+    protected String brand = "Honda";
+    public void honk() {
+        System.out.prinln("Honk!, Honk!");
     }
-  
-    public static void main(String[] args) {
-      Car myCar = new Car(1969, "Mustang");
-      System.out.println(myCar.modelYear + " " + myCar.modelName);
-    }
-  }
+}
+
+public class Car extends Vehicle {
+    private String modelName = "Fit";
+        public static void main(String[] args) {
+            Car myCar = new Car();
+                myCar.honk();
+            System.out.println(myCar.brand + " " + myCar.modelName);
+        }
+        
+}

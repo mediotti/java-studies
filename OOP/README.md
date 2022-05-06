@@ -54,3 +54,9 @@ class Dogs {
                 age = newAge;
             }
         ```
+## Herança
+- O que é?
+    - No Java, é possível atribuir heranças em métodos e objetos, de uma classe para outra. É possível atribuir a herança em dois tipos:
+        - Subclasse(Filhos): A classe que herda de outra classe.
+        - Superclasse(Pais): A classe que irá atribuir suas características para classes de níveis inferiores.
+    - Em java, é utilizado o "extends", para criar uma subclasse que inclua heranças numa classe.
